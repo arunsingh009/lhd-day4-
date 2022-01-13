@@ -48,7 +48,7 @@ class item {
         var z = document.createElement("button");
         z.classList.add('save');
         z.innerHTML = "Save";
-        // down.addEventListener('click', () => this.down(Form));
+        z.addEventListener('click', () => this.save(Form));
 
 
        //Appending
@@ -75,6 +75,10 @@ class item {
     }
     down(Form){
         Form.querySelector("form");
+        Form.classList.toggle("display");
+    }
+    save(Form){
+        alert("Your Recipe will Be saved");
         Form.classList.toggle("display");
     }
 }
